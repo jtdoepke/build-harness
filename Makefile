@@ -3,7 +3,6 @@ export OS ?= $(shell uname -s | tr '[:upper:]' '[:lower:]')
 export SELF ?= $(MAKE)
 export PATH := $(BUILD_HARNESS_PATH)/vendor:$(PATH)
 export DOCKER_BUILD_FLAGS ?=
-.DEFAULT_GOAL ?= help
 
 # Debug should not be defaulted to a value because some cli consider any value as `true` (e.g. helm)
 export DEBUG ?=

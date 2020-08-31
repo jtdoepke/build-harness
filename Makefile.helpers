@@ -36,6 +36,7 @@ endef
 
 default:: $(DEFAULT_HELP_TARGET)
 	@exit 0
+.DEFAULT_GOAL ?= default
 
 ## Help screen
 help:
